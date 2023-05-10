@@ -24,7 +24,7 @@ public class GreetController {
 		mv.setViewName("greet");
 		
 		if(userName != null) {
-			mv.addObject("Greeting", greetService.getGreeting()+ " "+userName);
+			mv.addObject("greeting", greetService.getGreeting()+ " "+userName);
 			
 		}
 		return mv;
